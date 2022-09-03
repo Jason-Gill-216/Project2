@@ -1,0 +1,187 @@
+<html>
+
+<head>
+<title> Form </title>
+</head>
+
+<style>
+
+#Div-1{ 
+width: 770px;
+height: 1400;
+border: 3px dotted black ;
+background-color:rgb(255, 78, 78);
+margin: auto ;
+}
+
+#Th{ 
+font-size: 32;
+color: white;
+}
+
+#Th0{ 
+font-size: 50;
+color: black;
+padding-left : 120 ;
+}
+
+#span-t{
+text-align: center;
+display: block;
+}
+
+.css{ 
+font-size: 25px;
+/* background-color:rgb(23, 64, 245); */
+}
+
+#Thf{ 
+font-size: 22;
+}
+
+</style>
+
+
+<body>
+    <div id="Div-1">
+
+        <h1 id="Th0" > <u> Student Registration </u> </h1>
+
+        <form>
+            <table cellpadding=" 10 ">
+                <tr> 
+                <td id="Th" > <label for="Name">  First Name :  </label> </td> 
+                <td> <input type="text" maxlength="7" placeholder="Enter Your First Name" id="FName" name="Fname" class="css"> <br> <span id="span-t"> (Max 7 Character Allowed) </span> </td> 
+                <!-- <td> <label for="Name">  </label> <input type="text" placeholder="Enter Your Last Name" id="LName" name="Lname"> </td> -->
+                </tr>
+
+                <tr> 
+                <td id="Th" > <label for="Name"> Last Name :  </label> </td>
+                <td> <input type="text" maxlength="5" placeholder="Enter Your Last Name" id="LName" name="Lname" class="css" > <br> <span id="span-t"> (Max 5 Character Allowed) </span> </td> 
+                </tr>
+
+
+                <tr>
+                <td id="Th"> <label for="F-Name"> Father Name :  </label> </td>
+                <td> <input type="text" maxlength="10" placeholder="Enter Your Father Name" id="F-Name" name="F-name" class="css" > <br>  <span id="span-t"> (Max 10 Character Allowed) </span> </td>
+                </tr>
+
+                <tr>
+                <td id="Th" > <label for="Gender"> Gender :  </label>  </td>
+                <td> <label class="css"  >  <input type="radio" id="Gender" name="Gender"> Male  </label>
+                <label class="css" >  <input type="radio" id="Gender" name="Gender" > Female  </td> </label>
+                </tr>
+                
+                <tr>
+                <td id="Th" > <label for="DOB"> D.O.B  : </label> </td>
+                <td> <input type="date"  id="DOB" name="DOB" class="css" > </td>
+                </tr>
+
+                <tr>
+                    <td id="Th" > <label for="Number"> Phone Number  : </label> </td>
+                    <td >
+                        <select id="Number" name="Number" class="css" >
+                        <option value="92"> +92 </option>
+                        <option value="93"> +93 </option>
+                        <option value="52"> +52 </option>
+                        <option value="73"> +73 </option>
+                        <option value="98"> +98 </option> 
+                        </select>
+                        
+                        <input type="" maxlength="10" placeholder="3745xxxxxx" id="Number" name="Number" class="css" > 
+                       
+                    </td>
+                </tr>
+
+                <!-- <tr>
+                <td id="Th" > <label for="Number"> Phone Number  : </label> </td>
+                <td> <input type="" placeholder="Enter Your Phone Number" id="Number" name="Number"> </td>
+                </tr> -->
+
+		        <tr>
+                <td id="Th" > <label for="gmail"> G-mail :  </label> </td>
+                <td> <input type="gmail" placeholder="Enter Your Email Address" id="F-Name" name="F-name" class="css"> </td>
+                </tr>
+
+                <tr>
+                <td id="Th" > <label for="password"> Password :  </label>  </td>
+                <td> <input type="password" placeholder="Enter Your Password " id="Password" name="password" class="css"> <br> <span id="span-t">   (Num & Alphabets & Special Characters etc . ) </span> </td>
+                </tr>
+
+                <tr>
+                <td id="Th" > <label for="Address"> Address :   </label>  </td>
+                <td id="TA" > <textarea name="address" rows="10" cols="30">  </textarea> </td> 
+                </tr>
+
+                <tr>
+                <td id="Th" > <label for="city"> City :  </label> </td>
+                <td> <input type="text" placeholder="Enter Your City" id="city" name="city" class="css"> </td>
+                </tr>
+
+                <tr>
+                <td id="Th" > <label for="Nationality"> Select Country :  </label>  </td>
+                <td> 
+                        <select id="Number" name="Number" class="css" >
+                        <option value="Pakistan"> Pakistan................... </option>
+                        <option value="China"> China </option>
+                        <option value="Iran"> Iran </option>
+                        <option value="India"> India </option>
+                        <option value="U.S.A"> U.S.A </option> 
+                        </select>
+		        </td>
+                </tr>
+
+                <tr>
+                <td id="Th" > <label for="Hobby"> Hobby :  </label>  </td> 
+                <td><label > <input type="checkbox" name="PUBG"> <span id="Thf"> PUBG </span>  </label>
+                    <label > <input type="checkbox"  name="Drawing"> <span id="Thf"> Drawing </span>  </label>
+                    <label > <input type="checkbox"  name="Cricket"> <span id="Thf"> Cricket </span> </label>
+                    <label > <input type="checkbox"  name="Foot Ball"> <span id="Thf"> Foot Ball </span> </label> 
+                    <label > <input type="checkbox"  name="Singing"> <span id="Thf"> Singing </span> </label> 
+                    <label > <input type="checkbox"  name="Other"> <span id="Thf"> Other </span> </label> </label>
+                </td>
+                </tr>
+
+
+                <tr>
+                    <td id="Th" > <label for="Qualifications"> Qualifications :  </label>  </td>
+                    <td> <label> <input type="checkbox"  name="Matric"> <span id="Thf" > Matric (10th) </span> <br> </label>
+                        <label> <input type="checkbox"  name="Inter"> <span id="Thf" > Intermediate (12th) </span> <br> </label>
+                        <label> <input type="checkbox"  name="Bs"> <span id="Thf"> Graduation (Bachelors) </span> <br> </label>
+                        <label> <input type="checkbox"  name="Ms"> <span id="Thf" > Post-Graduation (Masters) </span> <br> </label>
+                        <label> <input type="checkbox"  name="Phd"> <span id="Thf" > P.H.D </span> <br> </label>
+                        <label> <input type="checkbox"  name="Other"> <span id="Thf" > Other </span> </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="Th" > <label for=" Available Programs"> Available <br> Programs :  </label>  </td>
+                    <td> <input type="checkbox" name="CCA"> <span id="Thf" > CCA (Certificate in Computer Applinces) </span> <br>
+                        <input type="checkbox"  name="Web-Desining"> <span id="Thf" > Web-Desining </span> <br>
+                        <input type="checkbox"  name="Graphic-Desining"> <span id="Thf"> Graphic-Desining </span> <br>
+                        <input type="checkbox"  name="D.I.T"> <span id="Thf" > D.I.T (Diploma in Information Tecnology) </span> <br>
+                        <input type="checkbox"  name="D.com"> <span id="Thf" > D.com </span> <br>
+                        <input type="checkbox"  name="BBA"> <span id="Thf" > BBA </span>
+                        <input type="checkbox"  name="BS-CS "> <span id="Thf" > BS-CS </span>
+                        <input type="checkbox"  name="Other"> <span id="Thf" > B.com </span>
+                        <input type="checkbox"  name="MA"> <span id="Thf" > MA </span>
+                    </td>
+                
+                </tr>
+
+
+                <tr>
+                <td>  </td>         
+                <td> <br> <br>  <input type="submit" value="submit"> <input type="reset" value="reset"> </td>
+
+                </tr>
+
+
+            </table>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
